@@ -72,6 +72,27 @@ public class Arrays_Questions {
 		
 	// }
 	// 	System.out.println();
+
+
+// 		// Q4. Count The number of Occurences of a particular element x
+	
+// 			public static void countnumber (int [] arr, int x) {
+				
+// 				int count = 0;
+				
+// 				for (int i=0 ; i<arr.length; i++) {
+// 					if (x== arr[i]) {
+// 						count++;
+// 					}
+// 				}
+// 				System.out.println(count);
+				
+		
+// 	}
+	
+// }
+
+		
 	
 	
 	
