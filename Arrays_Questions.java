@@ -92,6 +92,52 @@ public class Arrays_Questions {
 	
 // }
 
+		//	Q2. Find the Last occurrence of an element x in a given array
+//	
+//	public static void lastelement (int [] arr, int x) {
+//		int lastindex = -1;
+//		for (int i =0; i<arr.length;i++) {
+//			if (arr[i]==x) {
+//				lastindex = i;
+//			}
+//			
+//		}
+//		System.out.println(lastindex);
+//		}
+	
+//	Q3. Count the number of elements strictly greater than value x;
+//	
+//	public static void greater(int [] arr, int x) {
+//		int count = 0;
+//		for (int i = 0; i<arr.length; i++) {
+//			if (x<arr[i]) {
+//				count++;
+//			}
+//		}
+//		System.out.println(count);
+//		
+//	}
+	
+//	Q4. check if the given array is sorted or not 
+	
+//	public static boolean isSorted(int []arr) {
+//		boolean check = true;
+//		for (int i=1; i<arr.length; i++) {
+//			if (arr[i] < arr[i-1]) {
+//				// not sorted 
+//				check = false;
+//				break;
+//			}
+//		}
+//		return check;
+//			
+//	}
+	
+
+
+
+		
+
 		
 	
 	
