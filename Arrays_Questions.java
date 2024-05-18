@@ -132,16 +132,68 @@ public class Arrays_Questions {
 //		return check;
 //			
 //	}
-	
 
 
 
-		
+		// Q5. Find the total number of pairs in the array whose sum is equal to the given value x;
+	
+//	public static void sum(int [] arr, int x) {
+//		
+//		int ans = 0;
+//		for (int i =0; i<arr.length; i++) {
+//			for (int j=i+1; j<arr.length; j++) {
+//				if (arr[i] + arr[j] == x) {
+//					ans++;
+//				}
+//				
+//			}
+//			
+//			
+//		}
+//		System.out.println(ans);
+//		
+//		
+//		
+//		
+//	}
+	
+//	Q6. Find the unique number in a given Array where all the elements are being repeated twice with one value being unique.
+	
+//	public static void unique(int [] arr) {
+//		for (int i=0; i<arr.length;i++) {
+//			for (int j=i+1; j<arr.length; j++) {
+//				if (arr[i] == arr[j]) {
+//					arr[i] = -1;
+//					arr[j] = -1;
+//					
+//				}
+//			}
+//		}
+//		
+//		 int ans =-1;
+//		 for (int i=0; i<arr.length;i++) {
+//			 if (arr[i]>0) {
+//				 ans = arr[i];
+//				 
+//			 }
+//		 }
+//		 System.out.println(ans);
+//		
+//	}
+	
+//	Q7. Find the largest number 
+	
+//	public static void Largest(int []arr) {
+//		int max =  Integer.MIN_VALUE;
+//		for (int i=0; i<arr.length; i++) {
+//			if (arr[i]>max) {
+//				max = arr[i];
+//			}
+//		}
+//		
+//		System.out.println(max);
 
-		
-	
-	
-	
+
 	}
 
 }
