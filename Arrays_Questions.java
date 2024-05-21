@@ -194,6 +194,114 @@ public class Arrays_Questions {
 //		System.out.println(max);
 
 
+		// Q8. Given two integers a and b. Swap the 2 given values using temp variables.
+//	
+//	public static void swap(int a, int b) {
+//		int temp = a;
+//		a = b;
+//		b = temp;
+//		
+//		
+//		
+//		System.out.println(a);
+//		System.out.println(b);
+//		
+//	}
+	
+//	Q9. Reverse an Array
+	
+//	public static int[] reverseArray(int[] arr) {
+//		int[] ans =  new int[arr.length];
+//		int j =0;
+//		
+//		for (int i = arr.length-1; i>=0; i--) {
+//			ans[j] = arr[i];
+//			j++;
+//		}
+//		
+//		return ans;
+//		
+//		
+//	}
+	
+//	public static void swapInArray(int[] arr, int i, int j) {
+//		int temp = arr[i];
+//		arr[i] = arr[j];
+//		arr[j] = temp;
+//
+//	}
+//	
+//	public static void reverseSwapArray(int []arr) {
+//		
+//		int i=0, j=arr.length-1;
+//		
+//		while (i<j) {
+//			swapInArray(arr,i,j);
+//			i++;
+//			j--;
+//			
+//		}
+//		
+//		
+//	}
+	
+//	Q10. Sort an Array consisting of only 0s and 1s.
+	
+//	static void sortZeroesAndOnes(int [] arr) {
+//		int n = arr.length;
+//		int zeroes = 0;
+//		
+//		for (int i=0; i<n; i++) {
+//			if (arr[i] ==0) {
+//				zeroes++;
+//			}
+//		}
+//		
+//		for (int i=0; i<n; i++ ) {
+//			if (i < zeroes) {
+//				arr[i] = 0;
+//				
+//			} else {
+//				arr[i] = 1;
+//				
+//			}
+//		}
+//	}
+//	
+		//Q11. move all even integers at the beginning of the array followed by the all the odd integers.
+	
+	
+	
+//	static void sortArray (int[] arr) {
+//		
+//		int n = arr.length;
+//		
+//		int left = 0, right = n-1;
+//		
+//		while (left < right ) {
+//			
+//			if (arr[left] % 2 == 1 && arr[right] % 2 ==0) {
+//				swap(arr, left, right);
+//				left ++;
+//				right --;
+//			}
+//			
+//			if (arr[left] % 2 == 0) {
+//				left++;
+//				
+//			}
+//			if (arr[right] % 2 ==1) {
+//				right--;
+//			}
+//		}
+//		
+//		
+//		
+//	}
+	
+	
+
+
 	}
 
 }
