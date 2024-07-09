@@ -135,6 +135,32 @@
 	}
 
 
+// Given a number n, find the sum of natural numbers till n but with alternate signs.
+	
+	static int SONM(int n) {
+		// base case 
+		
+		if (n == 0) {
+			return 0;
+			
+	
+		}
+		
+		// recursive work 
+		
+		SONM(n-1);
+		
+		// self work 
+		
+		if (n%2==0) { // even
+			return SONM(n-1) - n;
+		}
+		else { // odd
+			return SONM(n-1) + n;
+		}
+	}
+
+
 
 
 
