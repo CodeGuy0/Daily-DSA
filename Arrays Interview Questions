@@ -1,0 +1,46 @@
+Q1. The cumulative sum of an array at index i is defined as the sum of all elements of the array from index 0 to index i.
+
+Ans : 
+
+// Read the number of test cases.
+  		int T = sc.nextInt();
+   		sc.nextLine(); // consume the newline character
+		
+  		for (int t = 0; t<T; t++) {
+  			// Read the number of elements in the array
+  			int n = sc.nextInt();
+		int[] arr = new int[n];
+			
+			// Read the array elements
+			for (int i=0; i<n; i++) {
+				arr[i] = sc.nextInt();
+				
+			}
+			
+			// compute the commulative sum
+			int [] cumSum = computeCumulativeSum(arr);
+		
+			// print the cumulative sum for this test case
+			
+			for (int i= 0; i<n; i++) {
+				System.out.println(cumSum[i]);
+			if (i<n-1) {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+   		}
+  		sc.close();
+	}
+    	public static int[] computeCumulativeSum(int[] arr) {
+		
+  		int[] cumSum = new int[arr.length];
+  		cumSum[0] = arr[0];
+  		for (int i=1; i<arr.length; i++) {
+  			cumSum[i] = cumSum[i-1] + arr[i];
+    		}
+  		return cumSum;
+		
+  	}
+	
+
