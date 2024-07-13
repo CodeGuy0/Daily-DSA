@@ -174,3 +174,108 @@ public class array_practice_interview {
 	}
 
 }
+
+
+// Q5. Given an array, sort it using insertion sort.
+			
+		int T = sc.nextInt();
+		for (int t=0; t<T; t++) {
+			int n = sc.nextInt();
+			int [] arr = new int[n];
+			for (int i=0; i<n; i++) {
+				arr[i] = sc.nextInt();
+				
+			}
+			insertionSort(arr);
+			
+			for (int i=0; i<n; i++) {
+				System.out.print(arr[i] + " ");
+			}
+			System.out.println();
+			
+		}
+		sc.close();
+	}
+		
+		public static void insertionSort(int[] arr) {
+			int n = arr.length;
+			for (int i=1; i<n; i++) {
+				int key = arr[i];
+				int j = i-1;
+				
+				// Move elements of array[0..i-1], that are greater than key,
+				// to one position ahead of their current position 
+				
+				while (j>=0 && arr[j] > key) {
+					arr[j+1] = arr[j];
+					j=j-1;
+				}
+				arr[j+1] = key;
+			}
+		}
+}
+		
+// Q6. 	Given two sorted arrays A and B, find the merged sorted array C by merging A and B.
+		
+		int T = sc.nextInt();
+
+		
+		for (int t=0; t<T; t++) {
+			int n = sc.nextInt();
+			int m = sc.nextInt();
+			
+			int[] A = new int [n];
+			int[] B = new int [m];
+			
+			for (int i=0; i<n; i++) {
+				A[i] = sc.nextInt();
+				
+ 			}
+			
+			for (int i=0; i<m; i++) {
+				B[i] = sc.nextInt();
+			}
+			
+			
+			int [] C = mergeSortedArrays(A,B);
+			for (int i=0; i<C.length; i++) {
+				System.out.print(C[i] + " ");
+			}
+			System.out.println();
+			
+			
+		}
+		sc.close();
+	}
+	
+	static int [] mergeSortedArrays(int[] A, int[] B) {
+		int n = A.length;
+		int m = B.length;
+		int [] C = new int [n+m];
+		
+		int i = 0, j = 0, k = 0;
+		
+		while (i<n && j<m) {
+			if (A[i] <= B[j]) {
+				C[k++] = A[i++];
+				
+			} else {
+				C[k++] = B[j++];
+			}
+		}
+		
+		while (i<n) {
+			C[k++] = A[i++];
+		}
+		
+		while (j<m) {
+			C[k++] = B[j++];
+		}
+		return C;
+	}
+}
+
+
+
+
+
