@@ -1,4 +1,4 @@
-package arrays;
+package codes;
 
 public class Bubble_Sort_Algorithim {
 	public static void main(String[] args) {
@@ -43,7 +43,7 @@ public class Bubble_Sort_Algorithim {
 //  Optimized Way :: 
 
 
-package arrays;
+package codes;
 
 public class Bubble_Sort_Algorithim {
 	public static void main(String[] args) {
